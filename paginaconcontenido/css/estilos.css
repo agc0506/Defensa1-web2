@@ -1,0 +1,189 @@
+*{
+    border-radius: 5px;
+}
+.container{
+    padding: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "d1 d1 d1 d1"
+                        "d2 d2 d2 d2"
+                        "d2 d2 d2 d2"
+                        "d4 d4 d5 d5"
+                        "d4 d4 d6 d6"
+                        "d4 d4 d7 d7"
+                        "d8 d8 d10 d10"
+                        "d8 d8 d10 d10"
+                        "d11 d12 d13 d14"
+                        "d11 d12 d13 d14";
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr 2fr 2fr 2fr 1fr 1fr;
+}
+.d1{
+    height: 100px;
+    background-color: black;
+    grid-area: d1;
+}
+.d2{
+    grid-area: d2;
+    text-align: center;
+    background-image: url("../imagenes/imagen2.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    font-size: 50px;
+    color: white;
+}
+/*.d3{
+    background-color: orangered;
+    grid-area: d3;
+}*/
+.d4{
+    background-color: greenyellow;
+    grid-area: d4;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.d5{
+    background-color: cadetblue;
+    grid-area: d5;
+}
+.d6{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: chartreuse;
+    grid-area: d6;
+}
+.d7{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: darkgreen;
+    grid-area: d7;
+    padding: 5px;
+}
+.d8{
+    background-color: white;
+    grid-area: d8;
+}
+.d9{
+    background-color: purple;
+    grid-area: d9;
+}
+.d10{
+    background-color: black;
+    grid-area: d10;
+}
+.d11{
+    background-color: brown;
+    grid-area: d11;
+    font-size: 20px;
+}
+.d12{
+    background-color: brown;
+    grid-area: d12;
+    font-size: 20px;
+}
+.d13{
+    background-color: brown;
+    grid-area: d13;
+    font-size: 20px;
+}
+.d14{
+    background-color: brown;
+    grid-area: d14;
+    font-size: 20px;
+}
+.navbar{
+    text-align: end;
+    padding: 20px;
+    font-size: 30px;
+}
+.form{
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}
+table {
+    height: 50%;
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+img{
+    width: 300px;
+    height: 300;
+    padding: 5px;
+    border-radius: 50px;
+}
+@keyframes color {
+    0%{background-color: green;}
+    50%{background-color: black;}
+    100%{background-color: blueviolet;}
+}
+@keyframes color2 {
+    0%{background-color: blue;}
+    50%{background-color: gold;}
+    100%{background-color: white;}
+}
+.d4{
+    animation: color 3s infinite;
+}
+@keyframes fontsize {
+    0%{font-size: 5px;}
+    50%{font-size: 10px;}
+    100%{font-size: 15px;}
+}
+.d5{
+    animation: fontsize 3s infinite;
+}
+@keyframes rotate {
+    0%{rotate: 0deg;}
+    50%{rotate: 180deg}
+    100%{rotate:360deg}
+}
+.d6{
+    animation: rotate 3s infinite;
+}
+.d7:hover{
+    transition: transform 0.3 ease;
+    transform: scale(1.2);
+}
+.d8{
+    animation: color2 5s infinite;
+}
+.d11:hover{
+    transition: transform 0.3 ease;
+    transform: rotate(180deg);
+}
+.d12:hover{
+    transition: transform 0.5 ease;
+    font-size: 10px;
+}
+.d13:hover{
+    transition: transform 0.3 ease;
+    background-image: url(../imagenes/imagen4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.d14:hover{
+    transition: transform 0.5 ease;
+    color: blue;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
