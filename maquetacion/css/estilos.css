@@ -1,0 +1,80 @@
+*{  
+    padding: 5px;
+    border-style:groove;
+    border-radius: 2px;
+    padding: 5px;
+}
+.container{
+    padding: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "d1 d1 d1 d1"
+                        "d2 d2 d2 d2"
+                        "d3 d3 d3 d3"
+                        "d4 d4 d5 d5"
+                        "d4 d4 d6 d6"
+                        "d4 d4 d7 d7"
+                        "d8 d8 d9 d9"
+                        "d8 d8 d10 d10"
+                        "d11 d12 d13 d14"
+                        "d11 d12 d13 d14";
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr 2fr 2fr 2fr 1fr 1fr;
+}
+.d1{
+    height: 100px;
+    background-color: blue;
+    grid-area: d1;
+}
+.d2{
+    background-color: aqua;
+    grid-area: d2;
+}
+.d3{
+    background-color: orangered;
+    grid-area: d3;
+}
+.d4{
+    background-color: greenyellow;
+    grid-area: d4;
+}
+.d5{
+    background-color: cadetblue;
+    grid-area: d5;
+}
+.d6{
+    background-color: chartreuse;
+    grid-area: d6;
+}
+.d7{
+    background-color: darkgreen;
+    grid-area: d7;
+}
+.d8{
+    background-color: gray;
+    grid-area: d8;
+}
+.d9{
+    background-color: purple;
+    grid-area: d9;
+}
+.d10{
+    background-color: violet;
+    grid-area: d10;
+}
+.d11{
+    background-color: brown;
+    grid-area: d11;
+}
+.d12{
+    background-color: brown;
+    grid-area: d12;
+}
+.d13{
+    background-color: brown;
+    grid-area: d13;
+}
+.d14{
+    background-color: brown;
+    grid-area: d14;
+}
